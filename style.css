@@ -1,0 +1,81 @@
+/* Css Reset + Main Setup*/
+* {margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', serif;
+  }
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* Horizontal nav setup */
+ul {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  display: inline;
+}
+
+/* Left nav setup */
+.leftnv{
+  padding-left: 1.2em;
+  padding-top: 1.3em;
+  float: left;
+}
+#left-nav1 {
+  padding-left: 1.3em;
+  margin-left: 0.2em;
+}
+#left-nav2 {
+  margin-left: -0.3em;
+}
+
+/* right nav setup */
+.rightnv{
+  padding-right: 1.2em;
+  padding-top: 1.3em;
+  float: right;
+}
+#right-nav1 {
+  padding-right: 1.3em;
+  margin-right: 0.2em;
+}
+#left-nav2 {
+  margin-right: -0.3em;
+}
+i {
+  padding: 0;
+  margin: 0;
+  margin-top: -0.2em;
+}
+#icon {
+  font-size: 1.5em;
+  padding-left: 1em;
+  float: right;
+}
+
+/* nav links animations + edit + fonts*/
+a{
+  font-size: 90%;
+  font-weight: 200; 
+  color: #222222;
+  text-decoration: none;
+}
+a:hover {
+
+  text-decoration: underline;
+}
+
+/* Middle Main Page Setup */
+.logo { 
+  /* NEED TO FIX TOMORROW */
+  width: 100%;
+  margin-top: 50em;
+ padding: 60em;
+}
