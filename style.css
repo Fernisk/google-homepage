@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Noto Serif JP', serif;
   }
+  *:focus {
+    outline: none;
+  }
 
 html {
     box-sizing: border-box;
@@ -10,6 +13,7 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
 
   /* Horizontal nav setup */
 ul {
@@ -72,10 +76,41 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Middle Main Page Setup */
-.logo { 
-  /* NEED TO FIX TOMORROW */
-  width: 100%;
-  margin-top: 50em;
- padding: 60em;
+/* Middle Main Page Setup (PD: Perfect Positioning in Google Logo) */
+.centre {
+  text-align: center;
+}
+.logopos {
+  margin-top: 10.3%;
+  
+}
+.logo {
+  margin: 0 auto;
+}
+ /* Google Search Form */
+.google-form{
+  text-align: center;
+  margin-top: 2.2em;
+}
+.search-text {
+  display: inline-flex;
+  border-style: solid;
+  border-radius: 0px 25px 25px 0px;
+  border-left-style: none;
+  border-color: #f0f0f0;
+  background-color:white; 
+  width: 40em;
+  height: 47px;
+}
+#search-icon {
+  margin: 14px 10px;
+}
+button {
+  border-radius: 25px 0px 0px 25px;
+  color: #bbbbbb;
+  display: inline-flex;
+  border-color: #f0f0f0;
+   background-color:white;
+  border-style: solid;
+ border-right-style: none;
 }
