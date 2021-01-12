@@ -13,6 +13,10 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+body {
+  position: relative;
+  max-height: 100vh;
+}
 
 
   /* Horizontal nav setup */
@@ -79,6 +83,7 @@ a:hover {
 /* Middle Main Page Setup (PD: Perfect Positioning in Google Logo) */
 .centre {
   text-align: center;
+  padding-bottom: 2.5rem;
 }
 .logopos {
   margin-top: 10.3%;
@@ -92,25 +97,81 @@ a:hover {
   text-align: center;
   margin-top: 2.2em;
 }
+.input-icon i{
+  position: absolute;
+}
+.input-icon{
+  width: 100%;
+  margin-bottom: 10px;
+}
 .search-text {
-  display: inline-flex;
+  padding: 10px;
   border-style: solid;
-  border-radius: 0px 25px 25px 0px;
-  border-left-style: none;
+  border-radius: 25px 25px 25px 25px;
+  border-left-style: solid;
   border-color: #f0f0f0;
   background-color:white; 
   width: 40em;
   height: 47px;
+  overflow: hidden;
+}
+/* Animation for the search text */
+.search-text:hover {
+  border-color: #bbbbbb;
 }
 #search-icon {
-  margin: 14px 10px;
-}
-button {
+  padding: 17px;
+  overflow: auto; 
   border-radius: 25px 0px 0px 25px;
   color: #bbbbbb;
-  display: inline-flex;
-  border-color: #f0f0f0;
-   background-color:white;
-  border-style: solid;
- border-right-style: none;
+   background-color:transparent;
+  border-style: none;
 }
+  
+
+/* The two form buttons under search text */
+.google-btn {
+  color: #1f1f1f;
+  border-color: transparent;
+  padding: 6px 10px 6px 10px;
+  background-color: rgb(253, 253, 253);
+  font-size: 1em;
+  text-decoration: none;
+    border-radius: 3px;
+  margin-right: 0.5em;
+}
+ /* hover animation for google btn */  
+  .google-btn:hover {
+      position: relative;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+  } 
+
+.lucky-btn {
+  color: #1f1f1f;
+  border-color: transparent;
+  padding: 6px 10px 6px 10px;
+  background-color: rgb(253, 253, 253);
+  font-size: 1em;
+    border-radius: 3px;
+    text-decoration: none;
+  margin-left: 0.5em;
+}
+/* hover animation for lucky btn */
+.lucky-btn:hover {
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+  } 
+
+/* Footer Setup */
+ .footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 2.5rem;
+ }
+ .nav-footer {
+   background-color: gray;
+   overflow: hidden;
+   width: 100%;
+ }
